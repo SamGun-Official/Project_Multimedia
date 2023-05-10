@@ -1,0 +1,13 @@
+html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size:18px;
+    font-family: "com_regular";
+    background-color: rgb(231, 177, 10);
+}
+
+.navbar{
+    background-image: url('assets/navbar_background.png');
+    background-size: cover;
+}
