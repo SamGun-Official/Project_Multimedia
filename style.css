@@ -1,13 +1,143 @@
-html,body{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    font-size:18px;
-    font-family: "com_regular";
-    background-color: rgb(231, 177, 10);
+@charset "UTF-8";
+
+/* DEFAULT STYLES */
+* {
+	font-family: "com_regular";
+	margin: 0;
+	padding: 0;
 }
 
-.navbar{
-    background-image: url('assets/navbar_background.png');
-    background-size: cover;
+html,
+body {
+	background-color: #e7b10a;
+	height: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+	font-size: 18px;
+}
+
+li {
+	list-style-type: none;
+	padding: 8px;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-1 {
+	flex: 1;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.items-start {
+	align-items: flex-start;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.w-full {
+	width: 100%;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.top-0 {
+	top: 0;
+}
+
+.my-2 {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+/* CUSTOM STYLES */
+.container {
+	margin: 0 auto;
+	padding: 0 36px;
+}
+
+.navbar {
+	background-image: url("./assets/navbar_background.png");
+	background-repeat: no-repeat;
+	background-position: 0 40%;
+	background-size: 100% auto;
+	height: 320px;
+}
+
+.navbar .container {
+	height: 144px;
+}
+
+#logo {
+	display: block;
+	max-height: 208px;
+}
+
+.menu-item {
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 0 1.75rem;
+}
+
+/**
+ * Breakpoints (Mobile-first):
+ * 576px, 768px, 1024px, 1280px, 1536px
+ */
+@media screen and (min-width: 576px) {
+	.container {
+		max-width: 576px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.container {
+		max-width: 1024px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.container {
+		max-width: 1280px;
+	}
+}
+
+@media screen and (min-width: 1536px) {
+	.container {
+		max-width: 100%;
+	}
 }
