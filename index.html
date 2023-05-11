@@ -5,37 +5,51 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Home | Warung Rasa Indonesia</title>
-		<link rel="stylesheet" href="style.css" media="all" />
+		<link rel="stylesheet" href="./static/cssbin/style.css" media="all" />
 	</head>
-	<body id="home" class="flex flex-col">
-		<div class="navbar">
-			<div class="container flex flex-col items-center">
-				<div class="flex flex-1 items-center justify-between relative w-full my-2">
-					<div>
-						<a href="./" class="absolute top-0">
-							<img id="logo" src="./assets/logo_black.png" alt="Logo Cafe" />
-						</a>
+	<body id="home">
+		<div class="banner flex flex-col relative h-full">
+			<div class="navbar">
+				<div class="container flex flex-col items-center">
+					<div class="flex flex-1 items-center justify-between relative w-full my-3">
+						<div>
+							<a href="./" class="absolute top-0">
+								<img id="logo" src="./static/images/logo_black.png" alt="Logo Cafe" />
+							</a>
+						</div>
+						<div>
+							<ul class="flex flex-row gap-x-12">
+								<li class="menu-item">
+									<a href="./" class="menu-item-active">Home</a>
+								</li>
+								<li class="menu-item">
+									<a href="./menu">Menu</a>
+								</li>
+								<li class="menu-item">
+									<a href="./about">About</a>
+								</li>
+								<li class="menu-item">
+									<a href="./contact">Contact</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div>
-						<ul class="flex flex=row">
-							<li class="menu-item">
-								<a href="./" class="menu-item-active">Home</a>
-							</li>
-							<li class="menu-item">
-								<a href="./menu">Menu</a>
-							</li>
-							<li class="menu-item">
-								<a href="./about">About</a>
-							</li>
-							<li class="menu-item">
-								<a href="./contact">Contact</a>
-							</li>
-						</ul>
+				</div>
+			</div>
+			<div id="main_banner" class="absolute w-full flex flex-col justify-center">
+				<div class="container">
+					<div class="w-1/2 pt-8">
+                        <div class="mr-16">
+                            <div class="title">Rasa Indonesia</div>
+                            <div class="description">Tempat Warisan Kuliner Menjadi Hidup dengan cita rasa autentik, kelezatan yang memikat</div>
+                            <button class="btn btn-static mt-8">More</button>
+                        </div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="info" class="flex-1" style="background-color: aqua">H</div>
+		<div id="info"></div>
+		<div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A odio eos ab earum expedita quisquam ducimus nihil officia, id perspiciatis minima nam saepe explicabo vel alias amet aut impedit eveniet magni voluptatibus adipisci commodi laudantium provident. Iusto pariatur minus laboriosam qui id ducimus. Est, veritatis vel? Est necessitatibus quos, suscipit exercitationem saepe possimus ipsa rem. Corrupti officiis repellendus blanditiis quia pariatur et iste at, fuga nesciunt modi voluptatum accusantium earum, quasi asperiores, enim sed dignissimos sequi adipisci repellat ea veniam. Magni aut dolorem minima! Laudantium consectetur quam vitae expedita eligendi, veniam perspiciatis nobis exercitationem ratione tenetur, assumenda, aliquam aperiam possimus.</div>
 		<script type="text/javascript">
 			var w = window.innerWidth;
 			var h = window.innerHeight;
