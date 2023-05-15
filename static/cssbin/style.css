@@ -266,7 +266,7 @@ a {
 	background-color: white;
 	opacity: 0.5;
 	width: 75%;
-	height: 450px;
+	height: 20rem;
 	margin-top: -50px;
 	z-index: -1;
 	position: relative;
@@ -295,8 +295,48 @@ a {
 }
 
 .banner3 .carousel{
-	height: 30%;
+	box-sizing: border-box;
 }
+
+.column {
+	float: left;
+	width: 33%;
+	padding: 0 10px;
+  }
+  
+  .row {
+	margin-left: 2rem;
+	height: 50rem;	
+  }
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+    
+  .card{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	text-align: center;
+	background-color: #f1f1f1;
+	height: 35rem;
+	border-radius: 10px;
+  }
+
+  .card h3{
+	margin-top: 1.5rem;
+	font-family: "Montserrat";
+	font-size: 2.5rem;
+  }
+
+  .card img{
+	text-align: center;
+	width: 20rem;
+	height: 15rem;
+  }
+
+
 
 /**
  * Breakpoints (Mobile-first):
