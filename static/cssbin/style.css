@@ -348,8 +348,11 @@ a {
 	width: 100%;
   }
 
-  .banner4{
-
+  .card .btnCard:hover{
+	cursor: pointer;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid black;
   }
 
   .banner4{
