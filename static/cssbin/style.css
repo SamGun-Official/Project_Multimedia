@@ -266,7 +266,7 @@ a {
 	background-color: white;
 	opacity: 0.5;
 	width: 75%;
-	height: 20rem;
+	height: 25rem;
 	margin-top: -50px;
 	z-index: -1;
 	position: relative;
@@ -322,12 +322,15 @@ a {
 	background-color: #f1f1f1;
 	height: 35rem;
 	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
   }
 
   .card h3{
 	margin-top: 1.5rem;
 	font-family: "Montserrat";
 	font-size: 2.5rem;
+	flex: 1;
   }
 
   .card img{
@@ -336,6 +339,13 @@ a {
 	height: 15rem;
   }
 
+  .card .gambar{
+	flex: 1;
+  }
+
+  .card .btnCard{
+	width: 100%;
+  }
 
 
 /**
