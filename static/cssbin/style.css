@@ -264,12 +264,13 @@ a {
 .banner2 .right .rectangle{
 	border-radius: 10px;
 	background-color: white;
-	opacity: 0.5;
+	opacity: 0.8;
 	width: 75%;
 	height: 25rem;
 	margin-top: -50px;
 	z-index: -1;
 	position: relative;
+	box-shadow: 5px 5px white;
 }
 
 .banner2 .right .rectangle .info{
@@ -306,7 +307,7 @@ a {
   
   .row {
 	margin-left: 2rem;
-	height: 50rem;	
+	height: 40rem;	
   }
   
   .row:after {
@@ -347,6 +348,31 @@ a {
 	width: 100%;
   }
 
+  .banner4{
+
+  }
+
+  .banner4{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: calc(100vh - 72px);
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+
+  .banner4 h3{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	text-align: center;
+	color: white;
+	font-family: "Montserrat";
+	font-size: 2rem;
+  }
 
 /**
  * Breakpoints (Mobile-first):
