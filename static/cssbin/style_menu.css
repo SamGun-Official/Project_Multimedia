@@ -205,7 +205,20 @@ a {
 	color: white;
 }
 
+.searcharea{
+	text-align: center;
+	margin-top: 2rem;
+}
 
+input[type=text]{
+	width: 90%;
+	height: 3rem;
+	font-family: "Montserrat";
+	font-size: 1.5rem;
+	border-radius: 10px;
+	padding-left: 5px;
+	border: 2px solid black;
+}
 
   .footer{
 	position: relative;
