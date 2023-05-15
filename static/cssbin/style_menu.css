@@ -211,14 +211,97 @@ a {
 }
 
 input[type=text]{
-	width: 90%;
-	height: 3rem;
+	width: 96%;
+	height: 4rem;
 	font-family: "Montserrat";
 	font-size: 1.5rem;
 	border-radius: 10px;
 	padding-left: 5px;
 	border: 2px solid black;
 }
+
+.banner3{
+	margin-top: -35rem;
+}
+
+.banner3 .title{
+	font-family: "Seaweed Script";
+	font-size: 6.5rem;
+	text-align: center;
+}
+
+.banner3 .carousel{
+	box-sizing: border-box;
+}
+
+.column {
+	float: left;
+	width: 33%;
+	padding: 0 10px;
+  }
+  
+  .row {
+	margin-left: 2rem;
+	height: 40rem;	
+  }
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+  .row2 {
+	margin-top: -3.5rem;
+	margin-left: 2rem;
+	height: 40rem;	
+  }
+  
+  .row2:afte {
+	content: "";
+	display: table;
+	clear: both;
+  }
+    
+  .card{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	text-align: center;
+	background-color: #f1f1f1;
+	height: 35rem;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+  }
+
+  .card h3{
+	margin-top: 1.5rem;
+	font-family: "Montserrat";
+	font-size: 2.5rem;
+	flex: 1;
+  }
+
+  .card img{
+	text-align: center;
+	width: 20rem;
+	height: 15rem;
+  }
+
+  .card .gambar{
+	flex: 1;
+  }
+
+  .card .btnCard{
+	width: 100%;
+  }
+
+  .card .btnCard:hover{
+	cursor: pointer;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid black;
+  }
+
 
   .footer{
 	position: relative;
