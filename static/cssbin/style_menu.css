@@ -329,7 +329,7 @@ input[type=text]{
 	align-items: center;
 	flex-direction: row;
 	justify-content: center;
-	margin-bottom: 50px;
+	margin-bottom: 6rem;
   }
   
   .pagination a {
