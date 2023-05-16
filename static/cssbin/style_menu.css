@@ -308,6 +308,8 @@ input[type=text]{
 	position: relative;
 	text-align: center;
 	height: 10rem;
+	border-top: 1px solid black;
+	box-shadow: 10px 10px 8px 10px #000;
   }
 
   .footer p{
@@ -327,6 +329,7 @@ input[type=text]{
 	align-items: center;
 	flex-direction: row;
 	justify-content: center;
+	margin-bottom: 50px;
   }
   
   .pagination a {
