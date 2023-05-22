@@ -5,120 +5,120 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Home | Warung Rasa Indonesia</title>
+		<link rel="stylesheet" href="./static/cssbin/polymer.css" media="all" />
 		<link rel="stylesheet" href="./static/cssbin/style.css" media="all" />
-		<link rel="icon" type="icon/png" href="./static/images/logo_black.png">
+		<link rel="icon" type="icon/png" href="./static/images/logo_black.png" />
+		<script type="text/javascript" src="./static/jsbin/home.js" defer></script>
 	</head>
 	<body id="home">
-		<div class="banner flex flex-col relative h-full">
-			<div class="navbar">
-				<div class="container flex flex-col items-center">
-					<div class="flex flex-1 items-center justify-between relative w-full my-3">
-						<div>
-							<a href="./" class="absolute top-0">
-								<img id="logo" src="./static/images/logo_black.png" alt="Logo Cafe" />
-							</a>
+		<div id="wrapper">
+			<div id="section_1" class="banner relative" style="display: flex; justify-content: space-between; flex-direction: column">
+				<div id="navbar_background" class="w-full absolute"></div>
+				<div class="container relative" style="flex: 1; display: flex; flex-direction: column">
+					<div id="navbar" class="flex">
+						<div class="flex flex-1 items-center justify-between relative w-full my-3">
+							<div>
+								<a href="./" class="absolute top-0">
+									<img id="logo" src="./static/images/logo_black.png" alt="Logo Cafe" />
+								</a>
+							</div>
+							<div>
+								<ul class="flex flex-row gap-x-12">
+									<li class="menu-item">
+										<a href="index.html" class="menu-item-active">Home</a>
+									</li>
+									<li class="menu-item">
+										<a href="menu.html">Menu</a>
+									</li>
+									<li class="menu-item">
+										<a href="about.html">About</a>
+									</li>
+									<li class="menu-item">
+										<a href="contact.html">Contact</a>
+									</li>
+								</ul>
+							</div>
 						</div>
-						<div>
-							<ul class="flex flex-row gap-x-12">
-								<li class="menu-item">
-									<a href="index.html" class="menu-item-active">Home</a>
-								</li>
-								<li class="menu-item">
-									<a href="menu.html">Menu</a>
-								</li>
-								<li class="menu-item">
-									<a href="about.html">About</a>
-								</li>
-								<li class="menu-item">
-									<a href="contact.html">Contact</a>
-								</li>
-							</ul>
+					</div>
+					<div class="inner-container" style="flex: 1; display: flex; align-items: flex-end">
+						<div class="w-5/12 pt-48 pb-46">
+							<div>
+								<div class="title">Rasa Indonesia</div>
+								<div class="description mt-4">Tempat Warisan Kuliner Menjadi Hidup dengan cita rasa autentik, kelezatan yang memikat</div>
+								<button class="btn btn-static mt-10">More</button>
+							</div>
+						</div>
+					</div>
+					<div id="main_banner" class="absolute">
+						<div id="image_1" class="image-placeholder"></div>
+					</div>
+				</div>
+			</div>
+			<div class="banner2">
+				<div class="left">
+					<div class="gambar">
+						<img src="./static/images/terang_bulan.png" alt="" />
+					</div>
+				</div>
+				<div class="right">
+					<div class="title">Cita Rasa Nusantara</div>
+					<div class="rectangle">
+						<div class="info">Makanan ringan khas Nusantara menggugah selera dengan kelezatan dan keanekaragaman rasanya. Dari rempah-rempah yang kaya hingga tekstur yang renyah, makanan ringan Nusantara menghadirkan cita rasa unik yang tak terlupakan.</div>
+					</div>
+				</div>
+				<div class="cb"></div>
+			</div>
+
+			<div class="banner3">
+				<div class="title">Jajanan Khas Nusantara</div>
+				<div class="carousel">
+					<div class="row">
+						<div class="column">
+							<div class="card">
+								<h3>Lemper</h3>
+								<div class="gambar">
+									<img src="./static/images/lemper.png" alt="" />
+								</div>
+								<p>Terbuat dari ketan yang dikukus dan dilapisi dengan irisan daging ayam atau abon. Dengan tekstur kenyal dan rasa gurih yang meresap dalam setiap gigitan, lemper menjadi pilihan makanan ringan yang lezat dan praktis.</p>
+								<button class="btn btn-static mt-8 btnCard">More</button>
+							</div>
+						</div>
+
+						<div class="column">
+							<div class="card">
+								<h3>Kue Cucur</h3>
+								<div class="gambar">
+									<img src="./static/images/kue_cucur.png" alt="" />
+								</div>
+								<p>Terbuat dari adonan tepung beras yang dicampur dengan gula kelapa dan air kelapa segar, kue cucur memiliki tekstur yang lembut di bagian dalamnya.</p>
+								<button class="btn btn-static mt-8 btnCard">More</button>
+							</div>
+						</div>
+
+						<div class="column">
+							<div class="card">
+								<h3>Tahu Isi</h3>
+								<div class="gambar">
+									<img src="./static/images/tahu_isi.png" alt="" />
+								</div>
+								<p>Terbuat dari tahu yang digoreng hingga kecokelatan, tahu isi kemudian diisi dengan campuran sayuran, daging cincang, atau udang yang telah dibumbui dengan rempah-rempah.</p>
+								<button class="btn btn-static mt-8 btnCard">More</button>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div id="main_banner" class="absolute w-full flex flex-col justify-center">
-				<div class="container">
-					<div class="w-1/2 pt-8">
-                        <div class="mr-16">
-                            <div class="title">Rasa Indonesia</div>
-                            <div class="description">Tempat Warisan Kuliner Menjadi Hidup dengan cita rasa autentik, kelezatan yang memikat</div>
-                            <button class="btn btn-static mt-8">More</button>
-                        </div>
-					</div>
-				</div>
+			<div class="banner4">
+				<h3>Jajan pasar Indonesia, gigitan kelezatan warisan budaya</h3>
 			</div>
-		</div>
-		<div id="info"></div>
-		
-		<div class="banner2">
-			<div class="left">
-				<div class="gambar">
-					<img src="./static/images/terang_bulan.png" alt="">
-				</div>
+			<div class="footer">
+				<p>© 2023 Warung Rasa Indonesia, All Rights Reserved.</p>
 			</div>
-			<div class="right">
-				<div class="title">
-					Cita Rasa Nusantara
-				</div>
-				<div class="rectangle">
-					<div class="info">
-						Makanan ringan khas Nusantara menggugah selera dengan kelezatan dan keanekaragaman rasanya. Dari rempah-rempah yang kaya hingga tekstur yang renyah, makanan ringan Nusantara menghadirkan cita rasa unik yang tak terlupakan.
-					</div>
-				</div>
-			</div>
-			<div class="cb"></div>
+			<!-- <script type="text/javascript">
+				var w = window.innerWidth;
+				var h = window.innerHeight;
+				document.getElementById("info").innerHTML = w + "," + h;
+			</script> -->
 		</div>
-		
-		<div class="banner3">
-			<div class="title">Jajanan Khas Nusantara</div>
-			<div class="carousel">
-				<div class="row">
-					<div class="column">
-					  <div class="card">
-						<h3>Lemper</h3>
-						<div class="gambar">
-							<img src="./static/images/lemper.png" alt="">
-						</div>
-						<p>Terbuat dari ketan yang dikukus dan dilapisi dengan irisan daging ayam atau abon. Dengan tekstur kenyal dan rasa gurih yang meresap dalam setiap gigitan, lemper menjadi pilihan makanan ringan yang lezat dan praktis.</p>
-						<button class="btn btn-static mt-8 btnCard">More</button>
-					  </div>
-					</div>
-				  
-					<div class="column">
-					  <div class="card">
-						<h3>Kue Cucur</h3>
-						<div class="gambar">
-							<img src="./static/images/kue_cucur.png" alt="">
-						</div>
-						<p>Terbuat dari adonan tepung beras yang dicampur dengan gula kelapa dan air kelapa segar, kue cucur memiliki tekstur yang lembut di bagian dalamnya.</p>
-						<button class="btn btn-static mt-8 btnCard">More</button>
-					  </div>
-					</div>
-					
-					<div class="column">
-					  <div class="card">
-						<h3>Tahu Isi</h3>
-						<div class="gambar">
-							<img src="./static/images/tahu_isi.png" alt="">
-						</div>
-						<p>Terbuat dari tahu yang digoreng hingga kecokelatan, tahu isi kemudian diisi dengan campuran sayuran, daging cincang, atau udang yang telah dibumbui dengan rempah-rempah.</p>
-						<button class="btn btn-static mt-8 btnCard">More</button>
-					  </div>
-					</div>
-				  </div>
-			</div>
-		</div>
-		<div class="banner4">
-			<h3>Jajan pasar Indonesia, gigitan kelezatan warisan budaya</h3>
-		</div>
-		<div class="footer">
-			<p>© 2023 Warung Rasa Indonesia, All Rights Reserved.</p>
-		</div>
-		<!-- <script type="text/javascript">
-			var w = window.innerWidth;
-			var h = window.innerHeight;
-			document.getElementById("info").innerHTML = w + "," + h;
-		</script> -->
 	</body>
 </html>
