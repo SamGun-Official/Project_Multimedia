@@ -1,83 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Warung Rasa Indonesia</title>
-    <link rel="stylesheet" href="./static/cssbin/style_contact.css" media="all" />
-    <link rel="icon" type="icon/png" href="./static/images/logo_black.png">
-</head>
-<body id="contact">
-    <div class="banner flex flex-col relative h-full">
-        <div class="navbar">
-            <div class="container flex flex-col items-center">
-                <div class="flex flex-1 items-center justify-between relative w-full my-3">
-                    <div>
-                        <a href="./" class="absolute top-0">
-                            <img id="logo" src="./static/images/logo_black.png" alt="Logo Cafe" />
-                        </a>
-                    </div>
-                    <div>
-                        <ul class="flex flex-row gap-x-12">
-                            <li class="menu-item">
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="menu.html">Menu</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="about.html">About</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="contact.html" class="menu-item-active">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="info">
-            <div class="left">
-                <h1>Contact Us</h1>
-                <h4>
-                    Alamat: Jl. Ngagel Jaya Tengah No.73-77, Surabaya<br>
-                    Jam Operasional: <br>
-                    Senin - Jumat: 08.00 - 22.00 <br> 
-                    Sabtu - Minggu: 10.00 - 22.00 <br>
-                    Telepon: +62 123 4567 8901 <br>
-                    Email: info@warungrasaindonesia.co.id <br>
-                    <br>
-                    <br>
-                    Ikuti kami di media sosial: <br>
-                    Facebook: facebook.com/warungrasaindonesia <br>
-                    Instagram: @warungrasaindonesia <br>
-                    <br>
-                    Kami juga menerima reservasi meja untuk acara <br>  
-                    khusus atau kelompok besar. Silakan hubungi kami <br>
-                    melalui telepon atau email untuk mengatur reservasi Anda. <br>
-                </h4>
-            </div>
-            <div class="right">
-                <div class="rectangle">
-                    <form action="">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name"> <br>
-                        <input type="email" placeholder="Email"> <br>
-                        <input type="number" placeholder="Phone Number"> <br>
-                        <textarea name="" id="" cols="30" rows="15" placeholder="Description"></textarea>
-                        <button class="btn btn-static mt-8 btnCard">Send</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="location">
-        <h1>Location</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5554996756237!2d112.75625407438703!3d-7.291305992716148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbb476048727%3A0x5f5f7cf736ae643e!2sInstitut%20Sains%20dan%20Teknologi%20Terpadu%20Surabaya!5e0!3m2!1sid!2sid!4v1684166949270!5m2!1sid!2sid" width="100%" height="1000px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="footer">
-        <p>© 2023 Warung Rasa Indonesia, All Rights Reserved.</p>
-    </div>
-</body>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact | Warung Rasa Indonesia</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						screens: {
+							xss: { raw: "(min-height: 0px)" },
+						},
+					},
+					screens: {
+						xs: "576px",
+						sm: "768px",
+						md: "1024px",
+						lg: "1280px",
+						xl: "1536px",
+					},
+				},
+			};
+		</script>
+		<link rel="stylesheet" type="text/css" href="./static/cssbin/polymer.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="./static/cssbin/style.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="./static/cssbin/navbar.css" media="all" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+		<script type="text/javascript" src="./static/jsbin/contact.js"></script>
+	</head>
+	<body id="contact" class="relative flex">
+		<div id="menu_drawer">
+			<div class="content-container w-full relative">
+				<div class="absolute top-0 left-0 right-0 xs:px-10">
+					<div id="inner_container" class="flex relative justify-end">
+						<div id="close_btn" class="mobile-menu btn btn-static flex flex-col relative">
+							<div class="rotated-stripe relative">
+								<div></div>
+								<div></div>
+							</div>
+							<div class="stripe"></div>
+							<div class="stripe"></div>
+							<div class="stripe"></div>
+						</div>
+					</div>
+				</div>
+				<div id="vertical_menu" class="flex justify-center items-center h-full">
+					<ul class="flex flex-col gap-y-10">
+						<li class="menu-item">
+							<a href="./">Home</a>
+						</li>
+						<li class="menu-item">
+							<a href="./menu">Menu</a>
+						</li>
+						<li class="menu-item">
+							<a href="./about">About</a>
+						</li>
+						<li class="menu-item">
+							<a href="./contact" class="menu-item-active">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper" class="w-full mx-auto my-0 relative">
+			<div id="banner" class="w-full h-full">
+				<div id="navbar_background" class="w-full absolute"></div>
+				<div class="content-container relative flex flex-col flex-1">
+					<div id="navbar" class="flex">
+						<div class="flex flex-1 items-center justify-between relative w-full my-4">
+							<div id="logo_container">
+								<a href="./" class="absolute top-0">
+									<img id="logo" src="./static/images/logo_black.png" alt="Logo Cafe" />
+								</a>
+							</div>
+							<div class="desktop-menu">
+								<ul class="flex flex-row gap-x-10">
+									<li class="menu-item">
+										<a href="./">Home</a>
+									</li>
+									<li class="menu-item">
+										<a href="./menu">Menu</a>
+									</li>
+									<li class="menu-item">
+										<a href="./about">About</a>
+									</li>
+									<li class="menu-item">
+										<a href="./contact" class="menu-item-active">Contact</a>
+									</li>
+								</ul>
+							</div>
+							<div id="drawer_btn" class="mobile-menu btn btn-static flex flex-col">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+					</div>
+					<div id="content" class="container mx-auto">
+						<div id="section_1" class="text-center lg:pt-32 pt-24 pb-24">
+							<div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
+								<div class="text-2xl font-medium flex flex-col items-start text-start lg:mt-8 mb-8">
+									<div class="title text-7xl mb-8">Kontak Kami</div>
+									<p>
+										Alamat: Jl. Contoh No. 123 Kota, Negara<br />Jam Operasional:<br />Senin - Jumat: 08.00 - 22.00<br />Sabtu - Minggu: 10.00 - 22.00<br />Telepon: +62 123 4567 8901 <br />Email info@warungrasaindonesia.co.id<br /><br />
+										Ikuti kami di media sosial:<br />Facebook: facebook.com/warungrasaindonesia<br />
+										Instagram: @warungrasaindonesia
+									</p>
+								</div>
+								<div class="flex justify-center">
+									<form action="#" id="contact_form" class="flex flex-col p-8 rounded-lg relative w-full gap-y-4">
+										<div class="background absolute top-0 left-0 w-full h-full"></div>
+										<div class="absolute top-0 left-0 w-full h-full bg-white rounded-lg" style="z-index: -2"></div>
+										<div class="grid grid-cols-2 gap-x-4">
+											<input type="text" name="first_name" id="first_name" class="input rounded-lg border-2 border-solid border-black p-4" placeholder="First Name" />
+											<input type="text" name="last_name" id="last_name" class="input rounded-lg border-2 border-solid border-black p-4" placeholder="Last Name" />
+										</div>
+										<input type="email" name="email" id="email" class="input rounded-lg border-2 border-solid border-black p-4" placeholder="Email" />
+										<input type="text" name="phone_number" id="phone_number" class="input rounded-lg border-2 border-solid border-black p-4" placeholder="Phone Number" />
+										<textarea type="text" name="description" id="description" class="input rounded-lg border-2 border-solid border-black p-4" placeholder="Description" rows="10"></textarea>
+										<div class="btn btn-static text-2xl py-4">Kirim</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div id="section_2" class="text-center relative mb-24">
+							<div class="title text-7xl mb-8">Lokasi Kami</div>
+							<!-- <div id="maps"> -->
+							<iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5555467015433!2d112.75625407584927!3d-7.29130067166908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbb476048727%3A0x5f5f7cf736ae643e!2sInstitut%20Sains%20dan%20Teknologi%20Terpadu%20Surabaya%20(ISTTS)!5e0!3m2!1sen!2sid!4v1686089843985!5m2!1sen!2sid" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full"></iframe>
+							<!-- </div> -->
+						</div>
+					</div>
+				</div>
+				<div id="footer" class="flex flex-col items-center justify-center py-16 gap-y-6">
+					<div class="flex gap-x-4">
+						<a class="rounded-full w-20 h-20" href="javascript:void(0)"></a>
+						<a class="rounded-full w-20 h-20" href="javascript:void(0)"></a>
+						<a class="rounded-full w-20 h-20" href="javascript:void(0)"></a>
+					</div>
+					<div class="flex gap-x-8 text-xl">
+						<a class="text-center font-medium" href="javascript:void(0)">Info</a>
+						<a class="text-center font-medium" href="javascript:void(0)">Support</a>
+						<a class="text-center font-medium" href="javascript:void(0)">Marketing</a>
+					</div>
+					<div class="flex gap-x-8 text-xl">
+						<a class="text-center font-medium" href="javascript:void(0)">Terms of Use</a>
+						<a class="text-center font-medium" href="javascript:void(0)">Privacy Policy</a>
+					</div>
+					<div class="flex gap-x-8 text-xl font-medium">Jl. Ngagel Jaya Tengah 73-77, Surabaya, Indonesia</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

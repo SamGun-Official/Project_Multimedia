@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+/* ===== Navbar Styles ===== */
+#menu_drawer {
+	background-color: var(--main-color);
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	width: 100vw;
+	height: 100vh;
+}
+
+#menu_drawer #inner_container {
+	margin: 1.25rem 0;
+}
+
+#close_btn {
+	position: relative;
+}
+
+#close_btn > div:first-child,
+#close_btn > div:first-child:hover {
+	background-color: transparent;
+}
+
+#close_btn > div:first-child {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	z-index: 1;
+}
+
+.rotated-stripe div {
+	margin: 0 !important;
+	position: absolute;
+	top: 50%;
+}
+
+.rotated-stripe div:first-child {
+	transform: rotate(45deg);
+}
+
+.rotated-stripe div:last-child {
+	transform: rotate(-45deg);
+}
+
+.stripe {
+	opacity: 0;
+}
+
+#navbar_background {
+	background-color: #805030;
+	height: 11rem;
+	z-index: 0;
+}
+
+#navbar {
+	height: 11rem;
+}
+
+#logo {
+	display: block;
+	max-height: 9rem;
+}
+
+#logo_container a {
+	position: relative;
+	top: auto;
+}
+
+.desktop-menu {
+	display: none;
+}
+
+.menu-item {
+	font-size: 1.75rem;
+	font-weight: bold;
+}
+
+.menu-item-active {
+	color: #fff;
+	text-shadow: 0 0 2px #000;
+}
+
+.mobile-menu {
+	display: block;
+}
+
+.mobile-menu.btn {
+	line-height: 4rem;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.mobile-menu.btn div {
+	background-color: #fff;
+	border-radius: 0.175rem;
+	padding: 0.15rem 0;
+	margin: 0.35rem 0;
+	width: 3.75rem;
+}
+
+.mobile-menu.btn:hover div {
+	background-color: #000;
+}
+
+#vertical_menu .menu-item {
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+/**
+ * Breakpoints (Mobile-first):
+ * 576px, 768px, 1024px
+ */
+@media screen and (min-width: 576px) {
+	#menu_drawer #inner_container {
+		margin: 2.5rem 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#menu_drawer {
+		display: none !important;
+	}
+
+	#navbar_background {
+		background-color: transparent;
+		background-image: url("../images/navbar_2.png");
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 17.5rem;
+	}
+
+	#navbar {
+		height: 9rem;
+	}
+
+	#logo {
+		max-height: 11.5rem;
+	}
+
+	#logo_container a {
+		position: absolute;
+		top: -2px;
+	}
+
+	.desktop-menu {
+		display: block;
+	}
+
+	.mobile-menu {
+		display: none !important;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#navbar_background {
+		height: 18rem;
+	}
+
+	#logo_container a {
+		top: 0;
+	}
+}
