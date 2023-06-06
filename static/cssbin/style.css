@@ -2,9 +2,11 @@
 
 /* ===== Custom Styles ===== */
 #content.background {
-	background-image: url("../images/indonesian_shadow.png");
-	background-position: center top;
-	background-size: contain;
+	background-image: url("../images/indonesian_shadow_low.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -999;
 }
 
 #small_placeholder {
@@ -27,7 +29,7 @@
 	font-family: "Seaweed Script";
 }
 
-#about #section_2 {
+#home #section_2 {
 	position: relative;
 	padding-bottom: 56.25%;
 }
@@ -92,6 +94,18 @@
 	background-size: cover;
 	opacity: 0.2;
 	z-index: -1;
+}
+
+#showcase_img {
+	background-color: var(--main-color);
+	box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.5);
+	width: 50rem;
+	height: 50rem;
+}
+
+#showcase .circle {
+	width: 40rem;
+	height: 40rem;
 }
 
 /**

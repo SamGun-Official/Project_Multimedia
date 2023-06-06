@@ -132,19 +132,21 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		setCurrentPage();
 	}
 
-	document.getElementById("menu_filter").addEventListener("change", function () {
-		currentPage = 1;
+	try {
+		document.getElementById("menu_filter").addEventListener("change", function () {
+			currentPage = 1;
 
-		let filterKeyword = document.getElementById("menu_filter").value;
-		let currentURL = new URL(location.protocol + "//" + location.host + location.pathname);
-		currentURL.searchParams.append("filter", filterKeyword);
+			let filterKeyword = document.getElementById("menu_filter").value;
+			let currentURL = new URL(location.protocol + "//" + location.host + location.pathname);
+			currentURL.searchParams.append("filter", filterKeyword);
 
-		let currentState = {};
-		currentState["filter"] = filterKeyword;
-		window.history.replaceState(currentState, "", currentURL.toString());
+			let currentState = {};
+			currentState["filter"] = filterKeyword;
+			window.history.replaceState(currentState, "", currentURL.toString());
 
-		setPageFilter(false);
-	});
+			setPageFilter(false);
+		});
+	} catch (e) {}
 });
 
 $(document).ready(function () {
