@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Detail Menu | Warung Rasa Indonesia</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						screens: {
+							xss: { raw: "(min-height: 0px)" },
+						},
+					},
+					screens: {
+						xs: "576px",
+						sm: "768px",
+						md: "1024px",
+						lg: "1280px",
+						xl: "1536px",
+					},
+				},
+			};
+		</script>
+		<link rel="stylesheet" type="text/css" href="../static/cssbin/polymer.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="../static/cssbin/style.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="../static/cssbin/navbar.css" media="all" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+		<script type="text/javascript" src="../static/jsbin/menu.js"></script>
+		<script type="text/javascript" src="../static/jsbin/detail.js"></script>
+	</head>
+	<body id="detail" class="relative flex">
+		<div id="menu_drawer">
+			<div class="content-container w-full relative">
+				<div class="absolute top-0 left-0 right-0 xs:px-10">
+					<div id="inner_container" class="flex relative justify-end">
+						<div id="close_btn" class="mobile-menu btn btn-static flex flex-col relative">
+							<div class="rotated-stripe relative">
+								<div></div>
+								<div></div>
+							</div>
+							<div class="stripe"></div>
+							<div class="stripe"></div>
+							<div class="stripe"></div>
+						</div>
+					</div>
+				</div>
+				<div id="vertical_menu" class="flex justify-center items-center h-full">
+					<ul class="flex flex-col gap-y-10">
+						<li class="menu-item">
+							<a href="./">Beranda</a>
+						</li>
+						<li class="menu-item">
+							<a href="../menu" class="menu-item-active">Menu</a>
+						</li>
+						<li class="menu-item">
+							<a href="../about">Tentang</a>
+						</li>
+						<li class="menu-item">
+							<a href="../contact">Kontak</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper" class="w-full mx-auto my-0 relative">
+			<div id="banner" class="w-full">
+				<div id="navbar_background" class="w-full absolute"></div>
+				<div class="content-container relative flex flex-col flex-1">
+					<div id="navbar" class="flex">
+						<div class="flex flex-1 items-center justify-between relative w-full my-4">
+							<div id="logo_container">
+								<a href="../" class="absolute top-0">
+									<img id="logo" src="../static/images/logo_black.png" alt="Logo Cafe" />
+								</a>
+							</div>
+							<div class="desktop-menu">
+								<ul class="flex flex-row gap-x-10">
+									<li class="menu-item">
+										<a href="../">Beranda</a>
+									</li>
+									<li class="menu-item">
+										<a href="../menu" class="menu-item-active">Menu</a>
+									</li>
+									<li class="menu-item">
+										<a href="../about">Tentang</a>
+									</li>
+									<li class="menu-item">
+										<a href="../contact">Kontak</a>
+									</li>
+								</ul>
+							</div>
+							<div id="drawer_btn" class="mobile-menu btn btn-static flex flex-col">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+					</div>
+					<div id="content" class="background container mx-auto">
+						<div id="section_1" class="text-center py-16">
+							<div class="title text-7xl mb-8">Kopi Gula Aren</div>
+							<div id="showcase" class="relative">
+								<div id="showcase_img" class="rounded-full shadow-black bg-white" style="background-image: url('../static/images/kopi_gula_aren.png'); background-position: center; background-size: cover; background-repeat: no-repeat; margin-left: 20px"></div>
+
+								<div class="circle absolute rounded-full shadow-black bg-white flex items-center justify-center text-2xl font-medium p-8" style="margin-top: -50px; z-index: -1">Kopi gula aren adalah minuman kopi yang unik dengan tambahan gula aren, yang memberikan sentuhan manis dan karamel yang khas.</div>
+
+								<div class="circle absolute rounded-full shadow-black bg-white flex items-center justify-center text-2xl font-medium p-8" style="margin-top: -15rem; right: 20rem; z-index: -1">Proses pembuatan kopi gula aren dimulai dengan menyeduh kopi seperti biasa, lalu gula aren ditambahkan ke dalam minuman tersebut.</div>
+
+								<div class="circle absolute rounded-full shadow-black bg-white flex items-center justify-center text-2xl font-medium p-8" style="top: 0px; right: 100px; z-index: -1">Kopi gula aren sering ditemui di warung kopi atau kedai kopi yang menyajikan minuman kopi khas.</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div id="section_2" class="text-center py-16">
+							<div class="title text-7xl mb-8">Kopi Khas Nusantara</div>
+							<div class="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+								<div class="menu-card bg-white p-6 rounded-2xl" data-type="Kopi">
+									<div class="h-72 flex items-center justify-center">
+										<img class="mx-auto my-0 max-h-72" src="../static/images/kopi_doger.png" alt="Gambar Kopi Doger" />
+									</div>
+									<div class="flex flex-col gap-y-3 my-6">
+										<div class="card-title text-4xl font-semibold">Kopi Doger</div>
+										<div class="menu-price text-3xl font-medium">Rp. 10.000,00</div>
+									</div>
+									<a href="../pages/kopi_doger">
+										<div class="btn btn-static text-2xl py-4">Lihat Menu</div>
+									</a>
+								</div>
+								<div class="menu-card bg-white p-6 rounded-2xl" data-type="Kopi">
+									<div class="h-72 flex items-center justify-center">
+										<img class="mx-auto my-0 max-h-72" src="../static/images/kopi_banner.png" alt="Gambar Kopi Gayo" />
+									</div>
+									<div class="flex flex-col gap-y-3 my-6">
+										<div class="card-title text-4xl font-semibold">Kopi Gayo</div>
+										<div class="menu-price text-3xl font-medium">Rp. 10.000,00</div>
+									</div>
+									<a href="../pages/kopi_gayo">
+										<div class="btn btn-static text-2xl py-4">Lihat Menu</div>
+									</a>
+								</div>
+								<div class="menu-card bg-white p-6 rounded-2xl" data-type="Kopi">
+									<div class="h-72 flex items-center justify-center">
+										<img class="mx-auto my-0 max-h-72" src="../static/images/kopi_klepon.png" alt="Gambar Kopi Klepon" />
+									</div>
+									<div class="flex flex-col gap-y-3 my-6">
+										<div class="card-title text-4xl font-semibold">Kopi Klepon</div>
+										<div class="menu-price text-3xl font-medium">Rp. 10.000,00</div>
+									</div>
+									<a href="../pages/kopi_klepon">
+										<div class="btn btn-static text-2xl py-4">Lihat Menu</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="footer" class="flex flex-col items-center justify-center py-16 gap-y-6">
+					<div class="flex gap-x-4">
+						<a class="rounded-full w-20 h-20" href="javascript:void(0)"></a>
+						<a class="rounded-full w-20 h-20" href="javascript:void(0)"></a>
+						<a class="rounded-full w-20 h-20" href="javascript:void(0)"></a>
+					</div>
+					<div class="flex gap-x-8 text-xl">
+						<a class="text-center font-medium" href="javascript:void(0)">Info</a>
+						<a class="text-center font-medium" href="javascript:void(0)">Bantuan</a>
+						<a class="text-center font-medium" href="javascript:void(0)">Pemasaran</a>
+					</div>
+					<div class="flex gap-x-8 text-xl">
+						<a class="text-center font-medium" href="javascript:void(0)">Syarat dan Ketentuan</a>
+						<a class="text-center font-medium" href="javascript:void(0)">Perlindungan Privasi</a>
+					</div>
+					<div class="flex gap-x-8 text-xl font-medium">Jl. Ngagel Jaya Tengah 73-77, Surabaya, Indonesia</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
