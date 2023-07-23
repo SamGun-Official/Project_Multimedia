@@ -5,120 +5,207 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Home | Warung Rasa Indonesia</title>
-		<link rel="stylesheet" href="./static/cssbin/polymer.css" media="all" />
-		<link rel="stylesheet" href="./static/cssbin/style.css" media="all" />
-		<link rel="icon" type="icon/png" href="./static/images/logo_black.png" />
-		<script type="text/javascript" src="./static/jsbin/home.js" defer></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						screens: {
+							xss: { raw: "(min-height: 0px)" },
+						},
+					},
+					screens: {
+						xs: "576px",
+						sm: "768px",
+						md: "1024px",
+						lg: "1280px",
+						xl: "1536px",
+					},
+				},
+			};
+		</script>
+		<link rel="stylesheet" type="text/css" href="./static/cssbin/polymer.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="./static/cssbin/style.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="./static/cssbin/navbar.css" media="all" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+		<script type="text/javascript" src="./static/jsbin/home.js"></script>
 	</head>
-	<body id="home">
-		<div id="wrapper">
-			<div id="section_1" class="banner relative" style="display: flex; justify-content: space-between; flex-direction: column">
+	<body id="home" class="relative flex">
+		<div id="menu_drawer">
+			<div class="content-container w-full relative">
+				<div class="absolute top-0 left-0 right-0 xs:px-10">
+					<div id="inner_container" class="flex relative justify-end">
+						<div id="close_btn" class="mobile-menu btn btn-static flex flex-col relative">
+							<div class="rotated-stripe relative">
+								<div></div>
+								<div></div>
+							</div>
+							<div class="stripe"></div>
+							<div class="stripe"></div>
+							<div class="stripe"></div>
+						</div>
+					</div>
+				</div>
+				<div id="vertical_menu" class="flex justify-center items-center h-full">
+					<ul class="flex flex-col gap-y-10">
+						<li class="menu-item">
+							<a href="./" class="menu-item-active">Beranda</a>
+						</li>
+						<li class="menu-item">
+							<a href="./menu">Menu</a>
+						</li>
+						<li class="menu-item">
+							<a href="./about">Tentang</a>
+						</li>
+						<li class="menu-item">
+							<a href="./contact">Kontak</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper" class="w-full mx-auto my-0 relative">
+			<div id="banner" class="w-full h-full">
 				<div id="navbar_background" class="w-full absolute"></div>
-				<div class="container relative" style="flex: 1; display: flex; flex-direction: column">
+				<div class="content-container relative flex flex-col flex-1 h-full">
 					<div id="navbar" class="flex">
-						<div class="flex flex-1 items-center justify-between relative w-full my-3">
-							<div>
+						<div class="flex flex-1 items-center justify-between relative w-full my-4">
+							<div id="logo_container">
 								<a href="./" class="absolute top-0">
 									<img id="logo" src="./static/images/logo_black.png" alt="Logo Cafe" />
 								</a>
 							</div>
-							<div>
-								<ul class="flex flex-row gap-x-12">
+							<div class="desktop-menu">
+								<ul class="flex flex-row gap-x-10">
 									<li class="menu-item">
-										<a href="index.html" class="menu-item-active">Home</a>
+										<a href="./" class="menu-item-active">Beranda</a>
 									</li>
 									<li class="menu-item">
-										<a href="menu.html">Menu</a>
+										<a href="./menu">Menu</a>
 									</li>
 									<li class="menu-item">
-										<a href="about.html">About</a>
+										<a href="./about">Tentang</a>
 									</li>
 									<li class="menu-item">
-										<a href="contact.html">Contact</a>
+										<a href="./contact">Kontak</a>
 									</li>
 								</ul>
 							</div>
-						</div>
-					</div>
-					<div class="inner-container" style="flex: 1; display: flex; align-items: flex-end">
-						<div class="w-5/12 pt-48 pb-46">
-							<div>
-								<div class="title">Rasa Indonesia</div>
-								<div class="description mt-4">Tempat Warisan Kuliner Menjadi Hidup dengan cita rasa autentik, kelezatan yang memikat</div>
-								<button class="btn btn-static mt-10">More</button>
+							<div id="drawer_btn" class="mobile-menu btn btn-static flex flex-col">
+								<div></div>
+								<div></div>
+								<div></div>
 							</div>
 						</div>
 					</div>
-					<div id="main_banner" class="absolute">
-						<div id="image_1" class="image-placeholder"></div>
+					<div id="small_placeholder" class="xl:w-5/12 w-full inner-container flex flex-1 items-center justify-center">
+						<div class="info xl:text-left w-8/12 text-center">
+							<div class="title text-8xl xl:text-left text-center">Rasa Indonesia</div>
+							<div class="description font-medium text-4xl mt-4 xl:text-left text-center">Tempat Warisan Kuliner Menjadi Hidup dengan cita rasa autentik, kelezatan yang memikat</div>
+							<a href="./about" class="flex xl:justify-start justify-center">
+								<div class="btn btn-static mt-10">Selengkapnya</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="banner2">
-				<div class="left">
-					<div class="gambar">
-						<img src="./static/images/terang_bulan.png" alt="" />
-					</div>
-				</div>
-				<div class="right">
-					<div class="title">Cita Rasa Nusantara</div>
-					<div class="rectangle">
-						<div class="info">Makanan ringan khas Nusantara menggugah selera dengan kelezatan dan keanekaragaman rasanya. Dari rempah-rempah yang kaya hingga tekstur yang renyah, makanan ringan Nusantara menghadirkan cita rasa unik yang tak terlupakan.</div>
-					</div>
-				</div>
-				<div class="cb"></div>
-			</div>
-
-			<div class="banner3">
-				<div class="title">Jajanan Khas Nusantara</div>
-				<div class="carousel">
-					<div class="row">
-						<div class="column">
-							<div class="card">
-								<h3>Lemper</h3>
-								<div class="gambar">
-									<img src="./static/images/lemper.png" alt="" />
+			<div class="content-container">
+				<div id="content" class="container mx-auto">
+					<div id="section_1" class="text-center py-24">
+						<div class="title text-7xl mb-12">Cita Rasa Nusantara</div>
+						<div class="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+							<div class="card bg-white p-6 rounded-2xl flex flex-col justify-between">
+								<div>
+									<div class="card-title text-4xl font-semibold">Lemper</div>
+									<div class="h-72 flex items-center justify-center my-6">
+										<img class="mx-auto my-0 max-h-72" src="./static/images/lemper.png" alt="Gambar Lemper" />
+									</div>
+									<p class="text-2xl text-left mb-6">Terbuat dari ketan yang dikukus dan dilapisi dengan irisan daging ayam atau abon. Dengan tekstur kenyal dan rasa gurih yang meresap dalam setiap gigitan, lemper menjadi pilihan makanan ringan yang lezat dan praktis.</p>
 								</div>
-								<p>Terbuat dari ketan yang dikukus dan dilapisi dengan irisan daging ayam atau abon. Dengan tekstur kenyal dan rasa gurih yang meresap dalam setiap gigitan, lemper menjadi pilihan makanan ringan yang lezat dan praktis.</p>
-								<button class="btn btn-static mt-8 btnCard">More</button>
+								<a href="./pages/lemper">
+									<div class="btn btn-static text-2xl py-4">Lihat Menu</div>
+								</a>
+							</div>
+							<div class="card bg-white p-6 rounded-2xl flex flex-col justify-between">
+								<div>
+									<div class="card-title text-4xl font-semibold">Kopi Gayo</div>
+									<div class="h-72 flex items-center justify-center my-6">
+										<img class="mx-auto my-0 max-h-72" src="./static/images/kopi_banner.png" alt="Gambar Kopi Gayo" />
+									</div>
+									<p class="text-2xl text-left mb-6">Keunikan Kopi Gayo terletak pada keasliannya, karena diproduksi secara organik dan diolah dengan hati-hati oleh petani setempat, menciptakan secangkir kopi berkualitas tinggi yang memukau para penikmatnya.</p>
+								</div>
+								<a href="./pages/kopi_gayo">
+									<div class="btn btn-static text-2xl py-4">Lihat Menu</div>
+								</a>
+							</div>
+							<div class="card bg-white p-6 rounded-2xl flex flex-col justify-between">
+								<div>
+									<div class="card-title text-4xl font-semibold">Teh Jahe</div>
+									<div class="h-72 flex items-center justify-center my-6">
+										<img class="mx-auto my-0 max-h-72" src="./static/images/teh_jahe.png" alt="Gambar Teh Jahe" />
+									</div>
+									<p class="text-2xl text-left mb-6">Teh jahe juga dikenal karena manfaatnya dalam meredakan gangguan pencernaan, meredakan mual, serta meningkatkan sistem kekebalan tubuh.</p>
+								</div>
+								<a href="./pages/teh_jahe">
+									<div class="btn btn-static text-2xl py-4">Lihat Menu</div>
+								</a>
 							</div>
 						</div>
-
-						<div class="column">
-							<div class="card">
-								<h3>Kue Cucur</h3>
-								<div class="gambar">
-									<img src="./static/images/kue_cucur.png" alt="" />
-								</div>
-								<p>Terbuat dari adonan tepung beras yang dicampur dengan gula kelapa dan air kelapa segar, kue cucur memiliki tekstur yang lembut di bagian dalamnya.</p>
-								<button class="btn btn-static mt-8 btnCard">More</button>
+						<div class="mt-12 flex items-center justify-center">
+							<a href="./menu" class="w-auto block">
+								<div class="btn btn-static text-2xl py-8">Selengkapnya</div>
+							</a>
+						</div>
+					</div>
+					<div id="section_2" class="relative">
+						<iframe src="https://www.youtube.com/embed/HZujw0zgx8g" class="absolute top-0 left-0 w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+					<div id="section_3" class="text-center py-24">
+						<div class="title text-7xl mb-12">Galeri Foto</div>
+						<div id="slick_grid" class="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+							<div class="image-wrapper">
+								<img src="./static/images/banner.jpg" alt="Gambar 1" />
+							</div>
+							<div class="image-wrapper">
+								<img src="./static/images/banner2.jpg" alt="Gambar 2" />
+							</div>
+							<div class="image-wrapper">
+								<img src="./static/images/cafe.jpeg" alt="Gambar 3" />
+							</div>
+							<div class="image-wrapper" style="display: none">
+								<img src="./static/images/iBwkhjyXFU.jpg" alt="Gambar 4" />
+							</div>
+							<div class="image-wrapper" style="display: none">
+								<img src="./static/images/legendcoffee.jpg" alt="Gambar 5" />
+							</div>
+							<div class="image-wrapper" style="display: none">
+								<img src="./static/images/Café_con_leche.jpg" alt="Gambar 6" />
 							</div>
 						</div>
-
-						<div class="column">
-							<div class="card">
-								<h3>Tahu Isi</h3>
-								<div class="gambar">
-									<img src="./static/images/tahu_isi.png" alt="" />
-								</div>
-								<p>Terbuat dari tahu yang digoreng hingga kecokelatan, tahu isi kemudian diisi dengan campuran sayuran, daging cincang, atau udang yang telah dibumbui dengan rempah-rempah.</p>
-								<button class="btn btn-static mt-8 btnCard">More</button>
-							</div>
+						<div id="slick_dots" class="flex justify-center items-center gap-x-4 mt-12">
+							<div id="layer_1" class="w-8 h-8 rounded-full" style="background-color: #000"></div>
+							<div id="layer_2" class="w-8 h-8 rounded-full" style="background-color: #5a5a5a"></div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="banner4">
-				<h3>Jajan pasar Indonesia, gigitan kelezatan warisan budaya</h3>
+			<div id="footer" class="flex flex-col items-center justify-center py-16 gap-y-6">
+				<div class="flex gap-x-4">
+					<a class="rounded-full w-20 h-20" href="javascript:void(0)"></a>
+					<a class="rounded-full w-20 h-20" href="javascript:void(0)"></a>
+					<a class="rounded-full w-20 h-20" href="javascript:void(0)"></a>
+				</div>
+				<div class="flex gap-x-8 text-xl">
+					<a class="text-center font-medium" href="javascript:void(0)">Info</a>
+					<a class="text-center font-medium" href="javascript:void(0)">Bantuan</a>
+					<a class="text-center font-medium" href="javascript:void(0)">Pemasaran</a>
+				</div>
+				<div class="flex gap-x-8 text-xl">
+					<a class="text-center font-medium" href="javascript:void(0)">Syarat dan Ketentuan</a>
+					<a class="text-center font-medium" href="javascript:void(0)">Perlindungan Privasi</a>
+				</div>
+				<div class="flex gap-x-8 text-xl font-medium">Jl. Ngagel Jaya Tengah 73-77, Surabaya, Indonesia</div>
 			</div>
-			<div class="footer">
-				<p>© 2023 Warung Rasa Indonesia, All Rights Reserved.</p>
-			</div>
-			<!-- <script type="text/javascript">
-				var w = window.innerWidth;
-				var h = window.innerHeight;
-				document.getElementById("info").innerHTML = w + "," + h;
-			</script> -->
 		</div>
 	</body>
 </html>

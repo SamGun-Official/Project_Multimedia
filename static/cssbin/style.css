@@ -1,284 +1,165 @@
 @charset "UTF-8";
 
 /* ===== Custom Styles ===== */
-html {
-	zoom: 100%;
-}
-
-:root {
-	--zoom: 1;
-}
-
-#wrapper {
-	margin: 0 auto;
-	overflow-x: hidden;
-	width: 100%;
-}
-
-.banner,
-.container {
-	min-height: 100%;
-}
-
-.container {
-	margin: 0 auto;
-	padding: 0 3.5rem;
-}
-
-#navbar_background {
-	background-image: url("../images/navbar_2.png");
-	background-position: center bottom;
+#content.background {
+	background-image: url("../images/indonesian_shadow_low.png");
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 18rem;
-	z-index: 0;
+	z-index: -999;
 }
 
-#navbar {
-	height: 9rem;
-}
-
-#logo {
-	display: block;
-	max-height: 12rem;
-}
-
-.menu-item {
-	font-size: 1.75rem;
-	font-weight: bold;
-}
-
-.menu-item-active {
-	color: #fff;
-}
-
-#main_banner {
-	height: calc(100% - 9rem);
-	text-align: right;
-	overflow: hidden;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 70%;
-	z-index: -1;
-}
-
-#image_1 {
-	background-image: url("../images/rujak_buah.png");
-	background-position: left;
-	background-repeat: no-repeat;
+#small_placeholder {
+	background-image: url("../images/indonesian_shadow_low.png");
+	background-position: center;
 	background-size: cover;
 }
 
-.image-placeholder {
-	display: inline-block;
-	transform: translateX(12.5%);
-	min-height: 100%;
-	/* width: 70vw; */
-	width: 100%;
+.content-container {
+	margin: 0 1.25rem;
 }
 
 .inner-container .title {
 	font-family: "Seaweed Script";
-	font-size: 6.5rem;
-	line-height: 1;
 }
 
-.inner-container .description {
-	font-size: 2.5rem;
-	font-weight: 500;
-	/* line-height: 1; */
+#section_1 .title,
+#section_2 .title,
+#section_3 .title {
+	font-family: "Seaweed Script";
 }
 
-.banner2 .left {
-	width: 50%;
-	float: left;
+#home #section_2 {
+	position: relative;
+	padding-bottom: 56.25%;
 }
 
-.banner2 .right {
-	width: 50%;
-	float: right;
+#section_3 .image-wrapper {
+	cursor: pointer;
+	position: relative;
+	padding-bottom: 100%;
+	width: 100%;
 }
 
-.banner2 .left .gambar img {
+#section_3 .image-wrapper img {
+	position: absolute;
+	object-fit: cover;
 	width: 100%;
 	height: 100%;
 }
 
-.banner2 .right .title {
-	margin-top: 10%;
-	margin-right: 10%;
-	font-family: "Seaweed Script";
-	font-size: 6.5rem;
-}
-
-.banner2 .right .rectangle {
-	border-radius: 10px;
-	background-color: white;
-	opacity: 0.8;
-	width: 75%;
-	height: 25rem;
-	margin-top: -50px;
-	z-index: -1;
-	position: relative;
-	box-shadow: 5px 5px white;
-}
-
-.banner2 .right .rectangle .info {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-family: "Montserrat";
-	font-size: 2rem;
-	color: black;
-	width: 100%;
-	padding-left: 10px;
-}
-
-.cb {
-	clear: both;
-}
-
-.banner3 .title {
-	font-family: "Seaweed Script";
-	font-size: 6.5rem;
-	text-align: center;
-}
-
-.banner3 .carousel {
-	box-sizing: border-box;
-}
-
-.column {
-	float: left;
-	width: 33%;
-	padding: 0 10px;
-}
-
-.row {
-	margin-left: 2rem;
-	height: 40rem;
-}
-
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	padding: 16px;
-	text-align: center;
-	background-color: #f1f1f1;
-	height: 35rem;
-	border-radius: 10px;
-	display: flex;
-	flex-direction: column;
-}
-
-.card h3 {
-	margin-top: 1.5rem;
-	font-family: "Montserrat";
-	font-size: 2.5rem;
-	flex: 1;
-}
-
-.card img {
-	text-align: center;
-	height: 15rem;
-}
-
-.card .gambar {
-	flex: 1;
-}
-
-.card .btnCard {
-	width: 100%;
-}
-
-.card .btnCard:hover {
-	cursor: pointer;
-	background-color: #fff;
-	color: #000;
-	border: 1px solid black;
-}
-
-.banner4 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner.jpg");
-	background-size: cover;
+#about #section_2 {
+	background-image: url("../images/cafe.jpeg");
+	background-position: center;
 	background-repeat: no-repeat;
-	background-position: center center;
-	height: calc(100vh - 72px);
-	color: white;
-	text-align: center;
-	position: relative;
+	background-size: cover;
 }
 
-.banner4 h3 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	color: white;
-	font-family: "Montserrat";
-	font-size: 2rem;
+#about #section_4 {
+	background-image: url("../images/banner2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.footer {
-	position: relative;
-	text-align: center;
-	height: 10rem;
+#slick_dots div {
+	cursor: pointer;
 }
 
-.footer p {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-family: "Montserrat";
-	color: black;
-	font-size: 1.5rem;
-	text-align: center;
+#footer {
+	background-color: #b58a05;
+	border-top: 1px solid #5a5a5a;
+}
+
+#footer a.rounded-full {
+	background-color: #000;
+}
+
+.menu-card {
+	display: none;
+}
+
+.reverse-grid {
+	direction: rtl;
+}
+
+.reverse-grid * {
+	direction: ltr;
+}
+
+#contact_form .background {
+	background-image: url("../images/wayang_background.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.2;
+	z-index: -1;
+}
+
+#showcase_img {
+	background-color: var(--main-color);
+	box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.5);
+	width: 50rem;
+	height: 50rem;
+}
+
+#showcase .circle {
+	width: 40rem;
+	height: 40rem;
 }
 
 /**
  * Breakpoints (Mobile-first):
- * 576px, 768px, 1024px, 1280px, 1536px
+ * 576px, 768px, 1024px, 1280px, 1536px, 1920px
  */
 @media screen and (min-width: 576px) {
-	.container {
-		max-width: 576px;
+	.content-container {
+		margin: 0 auto;
+		padding: 0 2.5rem;
 	}
 }
 
 @media screen and (min-width: 768px) {
-	.navbar {
-		background-image: url("../images/navbar_2.png");
-		background-repeat: no-repeat;
-		background-position: center bottom;
-		background-size: cover;
-		height: 19rem;
-	}
-
-	.container {
-		max-width: 100%;
-	}
 }
 
 @media screen and (min-width: 1024px) {
+	.content-container {
+		padding: 0 3.05rem;
+	}
+
+	#main_banner {
+		display: flex;
+	}
 }
 
 @media screen and (min-width: 1280px) {
 }
 
 @media screen and (min-width: 1536px) {
+	#home #banner {
+		background-image: url("../images/rujak_buah.png");
+		background-position: 125% bottom;
+		background-repeat: no-repeat;
+		background-size: auto calc(100% - 9rem);
+	}
+
+	.inner-container > div {
+		padding-top: 4rem;
+		width: 100%;
+	}
+
+	.inner-container .info {
+		width: 100%;
+	}
+
+	.content-container {
+		padding: 0 3.5rem;
+	}
+
+	#small_placeholder {
+		background-image: none;
+	}
 }
 
 @media screen and (min-width: 1920px) {
-	#wrapper {
-		max-width: 1920px;
-	}
 }
